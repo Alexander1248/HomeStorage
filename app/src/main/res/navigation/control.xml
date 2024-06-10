@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/control"
+    app:startDestination="@id/storageSystemsFragment">
+
+    <fragment
+        android:id="@+id/storageSystemsFragment"
+        android:name="ru.alexander.homestorage.fragments.StorageSystemsFragment"
+        android:label="fragment_storage_systems"
+        tools:layout="@layout/fragment_storage_systems" >
+        <action
+            android:id="@+id/toStorageSystem"
+            app:destination="@id/storageSystemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ru.alexander.homestorage.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="ru.alexander.homestorage.fragments.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/toCategory"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storageSystemFragment"
+        android:name="ru.alexander.homestorage.fragments.StorageSystemFragment"
+        android:label="fragment_storage_system"
+        tools:layout="@layout/fragment_storage_system" >
+        <argument
+            android:name="storage_system"
+            app:argType="ru.alexander.homestorage.model.storage.StorageSystem" />
+        <action
+            android:id="@+id/toStorage"
+            app:destination="@id/storageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storageFragment"
+        android:name="ru.alexander.homestorage.fragments.StorageFragment"
+        android:label="fragment_storage"
+        tools:layout="@layout/fragment_storage" >
+        <argument
+            android:name="storage_system"
+            app:argType="ru.alexander.homestorage.model.storage.StorageSystem" />
+        <argument
+            android:name="storage"
+            app:argType="ru.alexander.homestorage.model.storage.Storage" />
+        <argument
+            android:name="user"
+            app:argType="string" />
+        <action
+            android:id="@+id/toItem"
+            app:destination="@id/itemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="ru.alexander.homestorage.fragments.ItemFragment"
+        android:label="fragment_item"
+        tools:layout="@layout/fragment_item" >
+        <argument
+            android:name="storage_system"
+            app:argType="ru.alexander.homestorage.model.storage.StorageSystem" />
+        <argument
+            android:name="storage"
+            app:argType="ru.alexander.homestorage.model.storage.Storage" />
+        <argument
+            android:name="item"
+            app:argType="ru.alexander.homestorage.model.storage.Item" />
+        <argument
+            android:name="user"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="ru.alexander.homestorage.fragments.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <argument
+            android:name="category"
+            app:argType="ru.alexander.homestorage.model.storage.Category" />
+    </fragment>
+</navigation>

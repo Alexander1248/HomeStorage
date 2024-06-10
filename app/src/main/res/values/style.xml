@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HomeStorage.Button" parent="ThemeOverlay.AppCompat">
+        <item name="android:backgroundTint">?colorSecondary</item>
+    </style>
+
+    <style name="HomeStorage.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxStrokeColor">#000</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxBackgroundColor">?colorPrimary</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="textInputStyle">@style/HomeStorage.TextInputEditText</item>
+    </style>
+    <style name="HomeStorage.TextInputEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textCursorDrawable">?colorAccent</item>
+    </style>
+
+    <style name="HomeStorage.Dialog" parent="ThemeOverlay.Material3.Dialog">
+    </style>
+
+    <style name="HomeStorage.CheckBox" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/checkbox_color_selector</item>
+    </style>
+</resources>

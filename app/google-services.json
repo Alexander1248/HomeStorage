@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "150557604987",
+    "project_id": "homestorage-fa83d",
+    "storage_bucket": "homestorage-fa83d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150557604987:android:62f3cb767422c7517976de",
+        "android_client_info": {
+          "package_name": "ru.alexander.homestorage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-jfPYzn6tGVCRsXzCg0KFiZu2nWqO8HM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

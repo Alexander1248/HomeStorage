@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HomeStorage" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+         <item name="colorPrimary">@color/base</item>
+        <item name="colorSecondary">@color/contrast1</item>
+        <item name="colorAccent">@color/contrast2</item>
+        <item name="android:colorControlActivated">?colorSecondary</item>
+        <item name="checkboxStyle">@style/HomeStorage.CheckBox</item>
+    </style>
+
+    <style name="Theme.HomeStorage" parent="Base.Theme.HomeStorage" />
+</resources>
