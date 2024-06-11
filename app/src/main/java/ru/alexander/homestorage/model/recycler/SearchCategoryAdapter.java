@@ -1,27 +1,19 @@
 package ru.alexander.homestorage.model.recycler;
 
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.firebase.auth.FirebaseAuth;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
-import ru.alexander.homestorage.R;
 import ru.alexander.homestorage.databinding.CategoryItemLayoutBinding;
 import ru.alexander.homestorage.fragments.CategoriesFragmentDirections;
 import ru.alexander.homestorage.model.storage.Category;
-import ru.alexander.homestorage.services.ProfileManager;
 
 public class SearchCategoryAdapter extends RecyclerView.Adapter<SearchCategoryAdapter.ViewHolder> {
     private final List<Category> categories;

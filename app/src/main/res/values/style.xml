@@ -16,6 +16,7 @@
     </style>
 
     <style name="HomeStorage.Dialog" parent="ThemeOverlay.Material3.Dialog">
+        <item name="android:colorControlActivated">?colorSecondary</item>
     </style>
 
     <style name="HomeStorage.CheckBox" parent="Widget.Material3.CompoundButton.CheckBox">

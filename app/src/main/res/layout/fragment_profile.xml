@@ -26,7 +26,7 @@
             android:layout_height="203dp"
             android:background="@drawable/logo_rect"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/closet"
+            android:src="@drawable/account"
             android:layout_gravity="center"
             android:layout_margin="30dp"/>
 

@@ -1,9 +1,5 @@
 package ru.alexander.homestorage.model.storage;
 
-import android.util.Log;
-
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.PropertyName;
 
 import java.io.Serializable;

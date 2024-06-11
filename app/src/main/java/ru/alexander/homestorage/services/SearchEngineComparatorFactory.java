@@ -12,7 +12,7 @@ public class SearchEngineComparatorFactory {
             int count = 0;
             for (int i = 2; i < query.length(); i++) {
                 if (item.getName().toLowerCase().contains(query.substring(i - 2, i)))
-                    count += 3;
+                    count++;
 
                 for (Category category : item.getCategories())
                     for (String filter : category.getFilters())

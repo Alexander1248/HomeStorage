@@ -28,8 +28,6 @@ public class LoginActivity extends AppCompatActivity {
         binding.logIn.setOnClickListener(this::SignIn);
         binding.register.setOnClickListener(view ->
                 startActivity(new Intent(this, RegistrationActivity.class)));
-//                Navigation.findNavController(view).navigate(R.id.toRegFromLogIn));
-//                Navigation.findNavController(view).navigate(R.id.toControlFromLogIn));
         setContentView(binding.getRoot());
     }
 
@@ -47,7 +45,6 @@ public class LoginActivity extends AppCompatActivity {
         Task<AuthResult> result = auth.signInWithEmailAndPassword(email, password);
         result.addOnSuccessListener(authResult ->
                 startActivity(new Intent(this, CoreActivity.class)));
-//                Navigation.findNavController(view).navigate(R.id.toControlFromLogIn));
         result.addOnFailureListener(e -> {
             Toast.makeText(view.getContext(), R.string.log_in_error, Toast.LENGTH_SHORT).show();
             Log.i("Auth", e.getMessage());
