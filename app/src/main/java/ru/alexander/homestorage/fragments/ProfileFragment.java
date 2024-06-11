@@ -66,7 +66,7 @@ public class ProfileFragment extends Fragment {
         // Check if the app has permission to show notifications
         if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
             ProfileManager.Profile profile = ProfileManager.get();
-            String description = getString(R.string.username) + ": " + profile.getUsername();
+            String description = getString(R.string.username) + ": " + profile.getUsername() + "\n";
             description += getString(R.string.email) + ": " + auth.getCurrentUser().getEmail();
 
             // Create a notification channel for Android 8.0 (Oreo) and higher
